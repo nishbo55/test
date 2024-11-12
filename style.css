@@ -1,5 +1,4 @@
-/* style.css */
-
+/* Base styling */
 body {
   margin: 0;
   font-family: 'IBM Plex Mono', monospace;
@@ -11,6 +10,7 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
+  margin-left: 180px; /* Space for the left sidebar */
 }
 
 header {
@@ -33,11 +33,17 @@ p {
   font-size: 1.1em;
 }
 
+/* Sidebar styling (left aligned) */
 .sidebar {
+  position: fixed;
+  top: 20%;
+  left: 20px;
+  width: 150px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 20px;
+  text-align: left;
 }
 
 .sidebar a {
@@ -59,6 +65,26 @@ h2 {
   color: #FFFFFF;
 }
 
+/* About Me section styling */
+#about {
+  display: flex;
+  align-items: flex-start;
+}
+
+.profile-photo {
+  margin-right: 20px;
+}
+
+.profile-photo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid #112240;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Experience section styling */
 .experience-item {
   border-top: 1px solid #233554;
   padding-top: 20px;
@@ -79,6 +105,7 @@ h2 {
   font-size: 0.9em;
 }
 
+/* Footer styling */
 footer {
   display: flex;
   justify-content: center;
@@ -100,18 +127,18 @@ footer {
   color: #64ffda;
 }
 
-/* Fixed email on right side */
+/* Fixed email on the right side */
 .email-fixed {
   position: fixed;
-  right: 20px; /* Distance from the right side of the screen */
-  bottom: 50px; /* Increased distance from the bottom of the screen */
-  transform: rotate(90deg); /* Rotate the text to be vertical */
+  right: 20px;
+  bottom: 50px;
+  transform: rotate(90deg);
   font-size: 0.9em;
   color: #8892b0;
   text-decoration: none;
   font-family: 'IBM Plex Mono', monospace;
-  z-index: 1000; /* Ensure it's above other elements */
-  transform-origin: bottom left; /* Fix the rotation point */
+  z-index: 1000;
+  transform-origin: bottom left;
 }
 
 .email-fixed a {
@@ -121,16 +148,5 @@ footer {
 }
 
 .email-fixed a:hover {
-  color: #64ffda; /* Highlight color on hover */
+  color: #64ffda;
 }
-
-.profile-photo img {
-  width: 200px; /* Adjust size as needed */
-  height: 200px; /* Keep the aspect ratio */
-  object-fit: cover; /* Ensures the image is cropped properly */
-  border: 5px solid #112240; /* Border color matching your background */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
-  margin-bottom: 20px; /* Adds space below the photo */
-}
-
-
