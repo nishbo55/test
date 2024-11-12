@@ -104,14 +104,14 @@ footer {
 .email-fixed {
   position: fixed;
   right: 20px; /* Distance from the right side of the screen */
-  bottom: 20px; /* Distance from the bottom of the screen */
+  bottom: 50px; /* Increased distance from the bottom of the screen */
   transform: rotate(90deg); /* Rotate the text to be vertical */
   font-size: 0.9em;
   color: #8892b0;
   text-decoration: none;
   font-family: 'IBM Plex Mono', monospace;
   z-index: 1000; /* Ensure it's above other elements */
-  transform-origin: left bottom; /* Fix the rotation point */
+  transform-origin: bottom left; /* Fix the rotation point */
 }
 
 .email-fixed a {
