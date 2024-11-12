@@ -124,3 +124,14 @@ footer {
   color: #64ffda; /* Highlight color on hover */
 }
 
+.profile-photo img {
+  width: 200px; /* Adjust size as needed */
+  height: 200px; /* Keep the aspect ratio */
+  object-fit: cover; /* Ensures the image is cropped properly */
+  border-radius: 50%; /* Makes the image round */
+  border: 5px solid #112240; /* Border color matching your background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+  margin-bottom: 20px; /* Adds space below the photo */
+}
+
+
