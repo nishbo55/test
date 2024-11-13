@@ -1,78 +1,66 @@
+/* style.css */
+
 body {
   margin: 0;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Calibre', sans-serif;
   background-color: #0A192F;
   color: #8892b0;
 }
 
 .container {
-  display: flex;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Sidebar styling */
-.sidebar {
-  flex: 0 0 250px;
-  position: sticky;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-right: 20px;
-  border-right: 1px solid #233554;
-}
-
-header h1 {
-  font-size: 2.0em;
-  font-weight: bold;
-  color: #64ffda;
-}
-
-header p {
-  color: #8892b0;
-  font-size: 1.1em;
-}
-
-.nav-links a {
-  color: #8892b0;
-  text-decoration: none;
-  font-size: 1.1em;
-  padding: 5px 0;
-  display: block;
-}
-
-.nav-links a:hover {
+header {
   color: #FFFFFF;
 }
 
-.social-links {
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  background-color: #112240;
+  color: #64ffda;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: 'Calibre', sans-serif;
+}
+
+p {
+  color: #8892b0;
+  font-size: 1.1em;
+}
+
+.sidebar {
   display: flex;
-  gap: 15px;
+  flex-direction: column;
+  gap: 10px;
   margin-top: 20px;
 }
 
-.social-links a {
+.sidebar a {
   color: #8892b0;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
-.social-links a:hover {
-  color: #64ffda;
+.sidebar a:hover {
+  color: #FFFFFF;
 }
 
-/* Main content styling */
-main {
-  flex: 1;
-  padding-left: 20px;
+section {
+  margin-top: 40px;
 }
 
 h2 {
   font-size: 2em;
   color: #FFFFFF;
-  margin-top: 0;
+}
+
+h3 {
+  font-family: 'Calibre', sans-serif;
 }
 
 .experience-item {
@@ -88,6 +76,7 @@ h2 {
 }
 
 .skills span {
+  font-family: 'IBM Plex Mono', monospace;
   background-color: #112240;
   color: #64ffda;
   padding: 5px 10px;
@@ -95,17 +84,55 @@ h2 {
   font-size: 0.9em;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
-/* Profile photo styling */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  color: #8892b0;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.social-links a:hover {
+  color: #64ffda;
+}
+
+.email-fixed {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  transform: rotate(90deg);
+  font-size: 0.9em;
+  color: #8892b0;
+  text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
+  z-index: 1000;
+  transform-origin: bottom left;
+}
+
+.email-fixed a {
+  color: #8892b0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-fixed a:hover {
+  color: #64ffda;
+}
+
 .profile-photo img {
   width: 200px;
   height: 200px;
   object-fit: cover;
   border: 5px solid #112240;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-right: 20px;
+  margin-bottom: 20px;
 }
