@@ -27,8 +27,7 @@ body {
 header h1 {
   font-size: 1.5em;
   font-weight: bold;
-  /*  color: #64ffda; */
-  color: #ccd6f6; /* Soft gray, lighter than other text */
+  color: #64ffda;
 }
 
 header p {
