@@ -1,56 +1,78 @@
-/* style.css */
-
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #0A192F; /* dark background color */
-  color: #8892b0; /* light text color */
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #0A192F;
+  color: #8892b0;
 }
 
 .container {
-  max-width: 900px;
+  display: flex;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-header {
-  color: #FFFFFF;
+/* Sidebar styling */
+.sidebar {
+  flex: 0 0 250px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #233554;
 }
 
-h1 {
-  font-size: 3em;
+header h1 {
+  font-size: 1.5em;
   font-weight: bold;
+  color: #64ffda;
 }
 
-p {
+header p {
   color: #8892b0;
   font-size: 1.1em;
 }
 
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.sidebar a {
+.nav-links a {
   color: #8892b0;
   text-decoration: none;
   font-size: 1.1em;
+  padding: 5px 0;
+  display: block;
 }
 
-.sidebar a:hover {
+.nav-links a:hover {
   color: #FFFFFF;
 }
 
-section {
-  margin-top: 40px;
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: #8892b0;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.social-links a:hover {
+  color: #64ffda;
+}
+
+/* Main content styling */
+main {
+  flex: 1;
+  padding-left: 20px;
 }
 
 h2 {
   font-size: 2em;
   color: #FFFFFF;
+  margin-top: 0;
 }
 
 .experience-item {
@@ -66,32 +88,24 @@ h2 {
 }
 
 .skills span {
-  background-color: #112240; /* Dark badge color */
-  color: #64ffda; /* Bright text color */
+  background-color: #112240;
+  color: #64ffda;
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 0.9em;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
-.social-links a {
-  color: #8892b0;
-  text-decoration: none;
-  margin: 0 10px;
-  font-size: 1.2em;
-  display: flex;
-  align-items: center;
-}
-
-.social-links a i {
-  margin-right: 5px;
-}
-
-.social-links a:hover {
-  color: #64ffda;
+/* Profile photo styling */
+.profile-photo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid #112240;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
 }
