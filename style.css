@@ -113,3 +113,9 @@ h2 {
 html {
   scroll-behavior: smooth;
 }
+
+.highlight {
+  color: #FFFFFF; /* Matches the white color of your headings */
+  font-weight: bold; /* Optional, makes the text bold */
+}
+
