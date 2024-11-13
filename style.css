@@ -1,66 +1,53 @@
-/* General Styles */
 body {
   margin: 0;
   font-family: 'IBM Plex Mono', monospace;
   background-color: #0A192F;
   color: #8892b0;
-  scroll-behavior: smooth;
 }
 
 .container {
   display: flex;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-header {
-  padding-bottom: 20px;
-}
-
-/* Sidebar */
+/* Sidebar styling */
 .sidebar {
+  flex: 0 0 250px;
   position: sticky;
   top: 0;
-  flex: 0 0 200px;
-  padding-right: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #233554;
 }
 
-/* Updated name color */
 header h1 {
   font-size: 1.5em;
   font-weight: bold;
-  color: #ccd6f6; /* Subtle gray, lighter than other text but not pure white */
-  margin-bottom: 10px;
+  /*  color: #64ffda; */
+  color: #ccd6f6; /* Soft gray, lighter than other text */
 }
 
-.sidebar p {
+header p {
   color: #8892b0;
-  margin: 0;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  font-size: 1.1em;
 }
 
 .nav-links a {
   color: #8892b0;
   text-decoration: none;
   font-size: 1.1em;
+  padding: 5px 0;
+  display: block;
 }
 
 .nav-links a:hover {
   color: #FFFFFF;
 }
 
-/* Social Links in Sidebar */
 .social-links {
   display: flex;
   gap: 15px;
@@ -77,27 +64,18 @@ header h1 {
   color: #64ffda;
 }
 
-/* Main Content Sections */
-.main-content {
+/* Main content styling */
+main {
   flex: 1;
   padding-left: 20px;
-}
-
-section {
-  margin-top: 40px;
 }
 
 h2 {
   font-size: 2em;
   color: #FFFFFF;
+  margin-top: 0;
 }
 
-p {
-  color: #8892b0;
-  font-size: 1.1em;
-}
-
-/* Experience Section */
 .experience-item {
   border-top: 1px solid #233554;
   padding-top: 20px;
@@ -118,65 +96,17 @@ p {
   font-size: 0.9em;
 }
 
-/* Footer Social Links */
-footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-/* Smooth Scroll */
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Hover Highlight Effect on Job Titles */
-.job-title {
-  color: #8892b0;
-  cursor: pointer;
-}
-
-.job-title:hover {
-  color: #64ffda;
-  background-color: #112240;
-}
-
-/* Sticky Sidebar */
-.sidebar {
-  position: sticky;
-  top: 0;
-}
-
-/* Profile Photo */
+/* Profile photo styling */
 .profile-photo img {
-  width: 200px; /* Adjust size as needed */
+  width: 200px;
   height: 200px;
   object-fit: cover;
   border: 5px solid #112240;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-/* Contact Email (Right Aligned, Rotated) */
-.email-fixed {
-  position: fixed;
-  right: 20px;
-  bottom: 50px;
-  transform: rotate(90deg);
-  font-size: 0.9em;
-  color: #8892b0;
-  text-decoration: none;
-  font-family: 'IBM Plex Mono', monospace;
-  z-index: 1000;
-  transform-origin: bottom left;
-}
-
-.email-fixed a {
-  color: #8892b0;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.email-fixed a:hover {
-  color: #64ffda;
+  margin-right: 20px;
 }
