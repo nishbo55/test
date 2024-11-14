@@ -124,7 +124,7 @@ html {
 /* Highlighted text */
 .highlight {
   color: #FFFFFF; /* Matches the white color of your headings */
-  font-weight: bold; /* Optional, makes the text bold */
+/*  font-weight: bold;  Optional, makes the text bold */
 }
 
 /* New styles for section headers with smooth transition on hover */
