@@ -139,3 +139,12 @@ section {
 section:hover {
   background-color: #112240;
 }
+
+.client-link {
+  color: #64ffda;
+  text-decoration: none;
+}
+
+.client-link:hover {
+  text-decoration: none; /* Keeps underline off on hover */
+}
